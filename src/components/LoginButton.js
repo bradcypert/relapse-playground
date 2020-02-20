@@ -1,5 +1,5 @@
 import React from "react";
-import { Relapse, useReactiveState, useViewModel } from "../Relapse";
+import { useViewModel } from "../Relapse";
 
 export const LoginButton = () => {
   const userVm = useViewModel("userViewModel");

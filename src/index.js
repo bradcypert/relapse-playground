@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Relapse, useReactiveState, useViewModel } from "./Relapse";
+import { Relapse } from "./Relapse";
 import { LoginButton } from "./components/LoginButton";
 import { UserInfo } from "./components/UserInfo";
 import { UserViewModel } from "./viewmodels/UserViewModel";
-import "./index.css";
 import * as serviceWorker from "./serviceWorker";
+import { LogoutButton } from "./components/LogoutButton";
 
 const container = {
   userViewModel: new UserViewModel()
@@ -16,6 +16,7 @@ const App = () => {
     <div className="box">
       <LoginButton />
       <UserInfo />
+      <LogoutButton />
     </div>,
     container
   );
